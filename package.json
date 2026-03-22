@@ -1,0 +1,25 @@
+{
+  "name": "chai-css-engine",
+  "version": "1.0.0",
+  "description": "A lightweight utility-first CSS engine built with JavaScript",
+  "main": "src/extract.js",
+  "type": "module",
+  "keywords": [
+    "css",
+    "utility-first",
+    "css-engine",
+    "frontend",
+    "javascript",
+    "styling"
+  ],
+  "author": "Vicky Gupta",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vickyxcodes/chai-css-engine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vickyxcodes/chai-css-engine/issues"
+  },
+  "homepage": "https://github.com/vickyxcodes/chai-css-engine#readme"
+}
