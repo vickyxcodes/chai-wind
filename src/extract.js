@@ -16,7 +16,6 @@ export function initChaiCSS() {
         styleObj[property] = value;
       });
 
-      // 🧹 remove processed class
       el.classList.remove(cls);
     });
 

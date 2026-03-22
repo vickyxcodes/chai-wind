@@ -12,7 +12,7 @@ export function parseClass(cls) {
 
   if (!config) return null;
 
-  // 🔥 custom component (title, btn, card)
+  // ----- (title, btn, card)
   if (config.extra) {
     return [
       { property: config.property, value: config.value },
@@ -20,12 +20,12 @@ export function parseClass(cls) {
     ];
   }
 
-  // 🔥 grouped (text-center)
+  // ---- grouped (text-center)
   if (config[sub]) {
     return [config[sub]];
   }
 
-  // 🔥 multi-property (px, py)
+  // ----- multi-property (px, py)
   if (config.properties) {
     return config.properties.map((prop) => ({
       property: prop,
@@ -33,7 +33,7 @@ export function parseClass(cls) {
     }));
   }
 
-  // 🔥 normal
+  // ---- normal
   if (config.property) {
     return [
       {
