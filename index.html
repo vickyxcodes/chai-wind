@@ -2,113 +2,131 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>ChaiCSS Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>chai-wind</title>
+
+  <!-- 🔥 minimal base styling -->
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, Arial, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .section {
+      margin-top: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+  </style>
 </head>
 
-<body style="font-family: Arial, sans-serif;">
+<body>
 
-  <!-- 🔥 HEADER -->
-  <div class="chai-card chai-padding-20 chai-bg-black chai-c-white">
-    <h1 class="chai-title">ChaiCSS</h1>
-    <p class="chai-description">
+  <!-- 🔥 HERO -->
+  <div class="container">
+
+    <h1 class="chai-title chai-text-center">
+      chai-wind ☕
+    </h1>
+
+    <p class="chai-description chai-text-center">
       A lightweight utility-first CSS engine built with JavaScript
     </p>
-    <button class="chai-btn-primary">Get Started</button>
-  </div>
 
-  <!-- 🎨 COLORS -->
-  <div class="chai-margin-20">
-    <h2 class="chai-card-title">Colors</h2>
-    <div class="chai-bg-black chai-c-white chai-padding-10">Black Background</div>
-    <div class="chai-bg-red chai-c-white chai-padding-10">Red Background</div>
-  </div>
-
-  <!-- 📦 SPACING -->
-  <div class="chai-margin-20">
-    <h2 class="chai-card-title">Spacing</h2>
-    <div class="chai-p-20 chai-bg-black chai-c-white">Padding 20</div>
-    <div class="chai-m-20 chai-bg-red chai-c-white">Margin 20</div>
-    <div class="chai-px-20 chai-bg-black chai-c-white">Padding X</div>
-    <div class="chai-py-10 chai-bg-red chai-c-white">Padding Y</div>
-  </div>
-
-  <!-- 🔤 TYPOGRAPHY -->
-  <div class="chai-margin-20">
-    <h2 class="chai-card-title">Typography</h2>
-    <p class="chai-fs-20">Font Size 20</p>
-    <p class="chai-fw-bold">Bold Text</p>
-    <p class="chai-text-center">Centered Text</p>
-  </div>
-
-  <!-- 📐 FLEX LAYOUT -->
-  <div class="chai-margin-20">
-    <h2 class="chai-card-title">Flex Layout</h2>
-
-    <div class="chai-d-flex chai-justify-center chai-align-center chai-gap-10 chai-bg-black chai-c-white chai-h-100">
-      <div class="chai-bg-red chai-padding-10">Box 1</div>
-      <div class="chai-bg-red chai-padding-10">Box 2</div>
+    <div class="chai-text-center chai-margin-20">
+      <button class="chai-btn-primary">Get Started</button>
     </div>
+
   </div>
 
-  <!-- 📏 SIZE -->
-  <div class="chai-margin-20">
-    <h2 class="chai-card-title">Size</h2>
-    <div class="chai-w-200 chai-h-100 chai-bg-black chai-c-white">
-      200 x 100
-    </div>
-  </div>
+  <!-- 🔥 FEATURES -->
+  <div class="container section">
+    <h2 class="chai-card-title">Features</h2>
 
-  <!-- 🎯 POSITION -->
-  <div class="chai-margin-20">
-    <h2 class="chai-card-title">Positioning</h2>
+    <div class="grid">
+      <div class="chai-card">
+        Utility-first styling
+      </div>
 
-    <div class="chai-pos-relative chai-h-150 chai-bg-black">
-      <div class="chai-pos-absolute chai-top-10 chai-left-20 chai-bg-red chai-c-white chai-padding-10">
-        Positioned Box
+      <div class="chai-card">
+        Config-driven architecture
+      </div>
+
+      <div class="chai-card">
+        Multi-property utilities
+      </div>
+
+      <div class="chai-card">
+        Reusable components
       </div>
     </div>
   </div>
 
-  <!-- 🧱 BORDER -->
-  <div class="chai-margin-20">
-    <h2 class="chai-card-title">Borders</h2>
-    <div class="chai-border-2 chai-rounded-10 chai-padding-10">
-      Rounded Border
-    </div>
-  </div>
+  <!-- 🔥 DEMO -->
+  <div class="container section">
+    <h2 class="chai-card-title">Live Examples</h2>
 
-  <!-- 🪟 OVERFLOW -->
-  <div class="chai-margin-20">
-    <h2 class="chai-card-title">Overflow</h2>
-    <div class="chai-w-200 chai-h-100 chai-overflow-hidden chai-bg-black chai-c-white">
-      This is a very long text that will overflow and be hidden.
-    </div>
-  </div>
+    <div class="grid">
 
-  <!-- 🎨 VISUAL -->
-  <div class="chai-margin-20">
-    <h2 class="chai-card-title">Visual Effects</h2>
-    <div class="chai-shadow-0 4px 10px rgba(0,0,0,0.3) chai-padding-10">
-      Shadow Box
-    </div>
-    <div class="chai-opacity-0.5 chai-bg-red chai-padding-10">
-      Opacity Box
+      <div class="chai-card chai-text-center">
+        <p class="chai-fs-20">Typography</p>
+        <p class="chai-fw-bold">Bold Text</p>
+      </div>
+
+      <div class="chai-card">
+        <div class="chai-bg-black chai-c-white chai-p-10">
+          Background + Color
+        </div>
+      </div>
+
+      <div class="chai-card">
+        <div class="chai-p-20 chai-bg-red chai-c-white">
+          Padding + Spacing
+        </div>
+      </div>
+
+      <div class="chai-card">
+        <div class="chai-d-flex chai-justify-center chai-align-center chai-h-100 chai-bg-black chai-c-white">
+          Flex Center
+        </div>
+      </div>
+
     </div>
   </div>
 
   <!-- 🔥 COMPONENTS -->
-  <div class="chai-margin-20">
+  <div class="container section">
     <h2 class="chai-card-title">Components</h2>
 
-    <h1 class="chai-title">Title Component</h1>
-    <p class="chai-description">Description component</p>
+    <div class="grid">
 
-    <button class="chai-btn-primary">Primary Button</button>
+      <div class="chai-card">
+        <h3 class="chai-card-title">Card</h3>
+        <p>Reusable UI component</p>
+      </div>
 
-    <div class="chai-card">
-      <h2 class="chai-card-title">Card Title</h2>
-      <p>This is a card component</p>
+      <div class="chai-card chai-text-center">
+        <button class="chai-btn-primary">Button</button>
+      </div>
+
     </div>
+  </div>
+
+  <!-- 🔥 FOOTER -->
+  <div class="container section chai-text-center">
+    <p>Built with JavaScript • Utility-first approach</p>
   </div>
 
   <!-- ⚙️ SCRIPT -->
