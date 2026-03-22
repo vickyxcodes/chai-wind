@@ -1,5 +1,5 @@
 {
-  "name": "chai-wind",
+  "name": "@vickyxcodes/chai-wind",
   "version": "1.0.0",
   "description": "A lightweight utility-first CSS engine built with JavaScript",
   "main": "src/extract.js",
