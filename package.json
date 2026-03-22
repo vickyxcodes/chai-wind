@@ -1,6 +1,6 @@
 {
   "name": "@vickyxcodes/chai-wind",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight utility-first CSS engine built with JavaScript",
   "main": "src/extract.js",
   "type": "module",
